@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:organi_tempo/welcome_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,12 +41,14 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        child: Column(
-          
-        ),
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Drawing Paths',
+      home: Container(
+        color: Colors.white,
+        child: const WelcomeView()
       ),
     );
   }
 }
+
